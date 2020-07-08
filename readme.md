@@ -8,7 +8,7 @@
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Available scripts](#available scripts)
+* [Available scripts](#available-scripts)
 * [Status](#status)
 
 ## General info
