@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --mode development",
     "build": "webpack --config webpack.prod.js --mode production",
-    "publish": "npm run build && gh-pages -d dist",
+    "publish": "npm run build && gh-pages -d dist -b master",
     "generate-icons": "npx pwa-asset-generator ./src/assets/img/logo.svg public/pwa -i ./src/pages/index.html -m ./public/manifest.json  --path-override pwa --type png -b \"#2D2241\""
   },
   "keywords": [
