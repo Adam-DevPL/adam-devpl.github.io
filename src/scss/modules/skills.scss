@@ -37,6 +37,7 @@
   margin: 0 auto;
   list-style-type: none;
   padding: 0;
+  width: 288px;
 
   &__item {
     position: relative;
@@ -54,6 +55,12 @@
       left: 0;
       content: "";
       background: url("../assets/img/green-tick.svg");
+      .skills-list--white-tick & {
+        background: url("../assets/img/white-tick.svg");
+      }
+      .skills-list--dot & {
+        background: url("../assets/img/bullet.svg");
+      }
     }
   }
 }
