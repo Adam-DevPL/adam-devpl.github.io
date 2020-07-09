@@ -1,13 +1,27 @@
+
 @import "~normalize.css";
 
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono:wght@400;700&display=swap");
+
 @import "_variables";
-@import "modules/hello.scss";
+@import "modules/contact.scss";
+@import "modules/wave.scss";
+@import "modules/hero.scss";
+@import "modules/projects.scss";
+@import "modules/social-links.scss";
+@import "modules/skills.scss";
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  font-family: Nunito;
+  color: $text;
 }
