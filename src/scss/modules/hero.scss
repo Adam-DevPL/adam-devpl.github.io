@@ -1,0 +1,58 @@
+.hero {
+  padding: 64px 16px 88px 16px;
+
+  &__bubble {
+    display: none;
+  }
+
+  &__contact {
+    display: inline-block;
+    padding: 4px 8px;
+    background: $textLink;
+    border-radius: 64px;
+    font: $mobileTextBoldFont;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__container {
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-left: calc(50% - 212px / 2);
+    margin-right: calc(50% - 212px / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__header {
+    font: $mobileHeaderFont200;
+    color: $textDark;
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+
+  &__img {
+  }
+
+  &__link {
+    color: $textLink;
+    text-decoration: none;
+  }
+
+  &__paragraph {
+    font: $mobileTextFont;
+    color: $textDefault;
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  &__special {
+    color: $blue;
+
+  }
+}

@@ -1,0 +1,59 @@
+.skills {
+  padding: 64px 16px 88px 16px;
+  background: $blue;
+
+  &__columns {
+  }
+
+  &__header {
+    margin: 0;
+    text-align: center;
+    font: $mobileHeaderFont100;
+    color: $white;
+  }
+}
+
+.skills-section {
+  margin-top: 64px;
+
+  &__emoji {
+    display: block;
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font: $desktopHeaderFont300;
+    color: $white;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+}
+
+.skills-list {
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+
+  &__item {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 16px;
+    font: $desktopListFont;
+    color: $blueLight;
+
+    &::before {
+      position: absolute;
+      display: block;
+      width: 12px;
+      height: 9px;
+      top: 7px;
+      left: 0;
+      content: "";
+      background: url("../assets/img/green-tick.svg");
+    }
+  }
+}
