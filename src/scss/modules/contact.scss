@@ -1,0 +1,47 @@
+.contact {
+    padding: 64px 16px 88px 16px;
+    background: $blueLight;
+
+    &__header {
+        margin: 0;
+        margin-bottom: 32px;
+        font: $mobileHeaderFont100;
+        color: $textDark;
+        text-align: center;
+    }
+
+    &__description {
+        margin: 0;
+        margin-bottom: 48px;
+        font: $mobileTextFont;
+        color: $textDefault;
+        text-align: center;
+    }
+
+    &__container {
+        text-align: center;
+    }
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+    margin: 0;
+
+    &__background {
+        margin: 12px;
+        width: 48px;
+        height: 48px;
+        background: $white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+    }
+}
