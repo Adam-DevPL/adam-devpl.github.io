@@ -1,47 +1,60 @@
 .contact {
-    padding: 64px 16px 88px 16px;
-    background: $blueLight;
+  padding: 64px 16px 88px 16px;
+  background: $blueLight;
 
-    &__header {
-        margin: 0;
-        margin-bottom: 32px;
-        font: $mobileHeaderFont100;
-        color: $textDark;
-        text-align: center;
-    }
+  &__container {
+    text-align: center;
+  }
 
-    &__description {
-        margin: 0;
-        margin-bottom: 48px;
-        font: $mobileTextFont;
-        color: $textDefault;
-        text-align: center;
-    }
+  &__description {
+    margin: 0;
+    margin-bottom: 48px;
+    font: $mobileTextFont;
+    color: $textDefault;
+    text-align: center;
+  }
 
-    &__container {
-        text-align: center;
-    }
+  &__email {
+    display: inline-block;
+    padding: 4px 8px;
+    background: $textLink;
+    border-radius: 64px;
+    font: $mobileTextBoldFont;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__header {
+    margin: 0;
+    margin-bottom: 32px;
+    font: $mobileHeaderFont100;
+    color: $textDark;
+    text-align: center;
+  }
 }
 
 .social-links {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 52px;
+
+  &__background {
+    margin: 12px;
+    width: 48px;
+    height: 48px;
+    background: $white;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
-    
-    margin: 0;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
+  }
 
-    &__background {
-        margin: 12px;
-        width: 48px;
-        height: 48px;
-        background: $white;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__link {
-    }
+  &__link {
+    width: 24px;
+    height: 24px;
+  }
 }
