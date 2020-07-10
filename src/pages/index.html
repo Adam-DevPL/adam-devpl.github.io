@@ -42,13 +42,14 @@
             looking for a new challenges so if you have one -
             <a class="hero__link" href="#contact">contact</a> me 😊
           </p>
-          <a class="hero__contact" href="mailto:adam.piotr.wojnarowski@gmail.com"
-          >adam.piotr.wojnarowski@gmail.com</a>
+          <a
+            class="hero__contact"
+            href="mailto:adam.piotr.wojnarowski@gmail.com"
+            >adam.piotr.wojnarowski@gmail.com</a
+          >
         </article>
-
-        
       </section>
-      <section class="skills" id="#skills">
+      <section class="skills" id="skills">
         <h2 class="skills__header">My skills</h2>
         <div class="skills__columns">
           <article class="skills-section">
@@ -94,15 +95,44 @@
           </article>
         </div>
       </section>
-      <section class="projects" id="#projects">
+      <section class="projects" id="projects">
         <h2 class="projects__header">Recent projects</h2>
         <p class="projects__description">
           I started my frontend developer path in 2003. Since then, I’ve built
           some projects. Here’s the list of the things I’ve done so far.
         </p>
-        <div class="project-grid"></div>
+        <div class="project-grid">
+          <div class="project">
+            <div class="project__bar">
+              <span class="project__dot"></span>
+              <span class="project__dot"></span>
+              <span class="project__dot"></span>
+            </div>
+            <div class="project__main">
+              <img class="project__image" src="../assets/img/github-icon.svg" alt="Github icon.">
+              <div class="project-container">
+                  <h3 class="project-container__grid project-container__header">
+                    <span class="project-container__title">project <span class="special">:</span></span>
+                    <span>project name</span>
+                  </h3>
+                  <p class="project-container__grid project-container__grid--margin-bottom">
+                    <span class="project-container__title">description<span class="special">:</span></span>
+                    <span>project description</span>
+                  </p>
+                  <p class="project-container__grid">
+                    <span class="project-container__title">demo <span class="special">:</span></span>
+                    <span>&lt;<a class="project-container__link" href="#">see here</a>&gt;</span>
+                  </p>
+                  <p class="project-container__grid">
+                    <span class="project-container__title">github <span class="special">:</span></span>
+                    <span>&lt;<a class="project-container__link" href="#">source code</a>&gt;</span>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="contact" id="#contact">
+      <section class="contact" id="contact">
         <h2 class="contact__header">Contact me</h2>
         <p class="contact__description">
           I’m open for new opportunities. If you have one for me we should talk!

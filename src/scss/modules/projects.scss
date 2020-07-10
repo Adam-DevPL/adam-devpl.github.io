@@ -1,0 +1,92 @@
+.projects {
+  padding: 64px 16px 88px 16px;
+
+  &__header {
+      text-align: center;
+      font: $mobileHeaderFont100;
+      color: $textDark;
+      margin-top: 0;
+      margin-bottom: 32px;
+  }
+
+  &__description {
+      text-align: center;
+      font: $mobileTextFont;
+      color: $textDefault;
+      margin: 0;
+      margin-bottom: 46px;
+  }
+
+  &-grid {
+      display: grid;
+      min-width: 288px;
+      margin: 0 auto;
+  }
+}
+
+.project {
+    background: $consoleGray2;
+    border-radius: 16px;
+    overflow: hidden;
+
+    &__bar {
+        height: 40px;
+        background: $consoleGray1;
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+    }
+
+    &-container {
+        padding: 24px 16px;
+        font: $mobileConsoleFont;
+
+        &__grid {
+            margin: 0;
+            display: grid;
+            grid-template-columns: 102px 1fr;
+            column-gap: 4px;
+            margin-bottom: 8px;
+            font-size: 13px;
+            color: $consoleGray4;
+
+            &--margin-bottom {
+                margin-bottom: 16px;
+            }
+        }
+
+        &__header {
+            font-weight: bold;
+            color: $white;
+        }
+
+        &__link {
+            color: $consoleTextLink;
+        }
+
+        &__title {
+            text-align: end;
+            font-weight: normal;
+            font-size: 13px;
+        }
+    }
+
+    &__dot {
+        display: block;
+        width: 8px;
+        height: 8px;
+        background: $consoleGray3;
+        margin-right: 8px;
+        border-radius: 50%;
+    }
+
+    &__image {
+        width: 24px;
+        height: 24px;
+        margin: 24px 0 0 16px;
+    }
+
+    &__main {
+        margin-bottom: 24px;
+    }
+}
