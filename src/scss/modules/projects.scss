@@ -17,11 +17,7 @@
       margin-bottom: 46px;
   }
 
-  &-grid {
-      display: grid;
-      min-width: 288px;
-      margin: 0 auto;
-  }
+
 }
 
 .project {
@@ -78,6 +74,13 @@
         background: $consoleGray3;
         margin-right: 8px;
         border-radius: 50%;
+    }
+
+    &-grid {
+        display: grid;
+        min-width: 288px;
+        margin: 0 auto;
+        row-gap: 24px;
     }
 
     &__image {
