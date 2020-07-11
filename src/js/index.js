@@ -18,7 +18,7 @@ fetch(
               <span class="project__dot"></span>
             </div>
             <div class="project__main">
-              <img class="project__image" src="../assets/img/github-icon.svg"  alt="Github icon.">
+              <img class="project__image" src="img/github-icon.svg"  alt="Github icon.">
               <div class="project-container ">
                   <h3 class="project-container__grid project-container__header">
                     <span class="project-container__title">project <span class="special">:</span></span>
