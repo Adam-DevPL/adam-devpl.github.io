@@ -1,11 +1,15 @@
 .hero {
   padding: 64px 16px 88px 16px;
 
+  @media (min-width: $desktop) {
+    padding: 80px 229px 176px 229px;
+  }
+
   &__bubble {
     display: none;
   }
 
-  &__contact  {
+  &__contact {
     display: inline-block;
     padding: 4px 8px;
     background: $textLink;
@@ -13,6 +17,9 @@
     font: $mobileTextBoldFont;
     color: $white;
     text-decoration: none;
+    @media (min-width: $desktop) {
+      font: $desktopTextBoldFont;
+    }
   }
 
   &__container {
@@ -23,10 +30,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: $desktop) {
+      margin-bottom: 72px;
+    }
   }
 
   &__description {
     text-align: center;
+
+    @media (min-width: $desktop) {
+      max-width: 786px;
+      margin: 0 auto;
+      position: relative;
+      &::before,
+      &::after {
+        width: 82.94px;
+        height: 254.88px;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+      }
+      &::before {
+        background: url("../assets/img/left.svg");
+        right: 100%;
+      }
+      &::after {
+        background: url("../assets/img/right.svg");
+        left: 100%;
+      }
+    }
   }
 
   &__header {
@@ -34,6 +68,10 @@
     color: $textDark;
     margin-bottom: 16px;
     margin-top: 0;
+    @media (min-width: $desktop) {
+      font: $desktopHeaderFont200;
+      margin-bottom: 24px;
+    }
   }
 
   &__img {
@@ -42,17 +80,27 @@
   &__link {
     color: $textLink;
     text-decoration: none;
+
+    @media (min-width: $desktop) {
+      text-decoration: underline;
+      font: $desktopTextBoldFont;
+    }
   }
 
   &__paragraph {
     font: $mobileTextFont;
     color: $textDefault;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 48px;
+    text-align: center;
+
+    @media (min-width: $desktop) {
+      font: $desktopTextFont;
+      margin-bottom: 64px;
+    }
   }
 
   &__special {
     color: $blue;
-
   }
 }

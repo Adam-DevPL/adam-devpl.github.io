@@ -16,11 +16,12 @@
 
   &__email {
     display: inline-block;
-    padding: 4px 8px;
     background: $textLink;
     border-radius: 64px;
     font: $mobileTextBoldFont;
     color: $white;
+    text-decoration: none;
+    padding: 4px 8px;
     text-decoration: none;
   }
 
