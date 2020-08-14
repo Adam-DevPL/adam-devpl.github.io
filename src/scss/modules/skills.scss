@@ -3,6 +3,10 @@
   background: $blue;
 
   &__columns {
+    @media (min-width: $desktop) {
+      display: flex;
+      justify-content: space-around;
+    }
   }
 
   &__header {
@@ -10,6 +14,9 @@
     text-align: center;
     font: $mobileHeaderFont100;
     color: $white;
+    @media (min-width: $desktop) {
+      font: $desktopHeaderFont100;
+    }
   }
 }
 
@@ -30,6 +37,7 @@
     text-align: center;
     margin: 0;
     margin-bottom: 24px;
+    
   }
 }
 

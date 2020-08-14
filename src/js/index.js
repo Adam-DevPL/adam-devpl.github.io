@@ -10,6 +10,14 @@ fetch(
   .then((resp) => {
     for (let repo of resp) {
       const { description, homepage, html_url, name } = repo;
+      const target = "_blank";
+      const rel = "noopener noreferrer";
+      if(description == 'My portfolio') {
+        homepage = '#';
+        console.log('Prawie...');
+        target = "";
+        rel = "";
+      }
       const repositoryList = document.querySelector(".project-container--js");
       const myTemplate = `<div class="project">
             <div class="project__bar">
@@ -30,8 +38,8 @@ fetch(
                   </p>
                   <p class="project-container__grid">
                     <span class="project-container__title">demo <span class="special">:</span></span>
-                    <span>&lt;<a class="project-container__link" href="${homepage}" target="_blank"
-                    rel="noopener noreferrer">see here</a>&gt;</span>
+                    <span>&lt;<a class="project-container__link" href="${homepage}" target="${target}"
+                    rel="${rel}">see here</a>&gt;</span>
                   </p>
                   <p class="project-container__grid">
                     <span class="project-container__title">github <span class="special">:</span></span>

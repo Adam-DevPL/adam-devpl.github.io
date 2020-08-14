@@ -7,6 +7,9 @@
     color: $textDark;
     margin-top: 0;
     margin-bottom: 32px;
+    @media (min-width: $tablet) {
+      font: $desktopHeaderFont100;
+    }
   }
 
   &__description {
@@ -15,6 +18,9 @@
     color: $textDefault;
     margin: 0;
     margin-bottom: 46px;
+    @media (min-width: $tablet) {
+      font: $desktopTextFont;
+    }
   }
 }
 

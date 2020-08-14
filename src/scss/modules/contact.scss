@@ -4,6 +4,13 @@
 
   &__container {
     text-align: center;
+    @media (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 580px;
+      margin: 128px auto 0;
+    }
   }
 
   &__description {
@@ -12,6 +19,9 @@
     font: $mobileTextFont;
     color: $textDefault;
     text-align: center;
+    @media (min-width: $desktop) {
+      font: $desktopTextFont;
+    }
   }
 
   &__email {
@@ -23,6 +33,9 @@
     text-decoration: none;
     padding: 4px 8px;
     text-decoration: none;
+    @media (min-width: $desktop) {
+      font: $desktopTextBoldFont;
+    }
   }
 
   &__header {
@@ -31,6 +44,9 @@
     font: $mobileHeaderFont100;
     color: $textDark;
     text-align: center;
+    @media (min-width: $desktop) {
+      font: $desktopHeaderFont100;
+    }
   }
 }
 
@@ -41,6 +57,9 @@
   justify-content: center;
   margin: 0;
   margin-bottom: 52px;
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 
   &__background {
     margin: 12px;
