@@ -10,8 +10,8 @@ fetch(
   .then((resp) => {
     for (let repo of resp) {
       const { description, homepage, html_url, name } = repo;
-      const target = "_blank";
-      const rel = "noopener noreferrer";
+      let target = "_blank";
+      let rel = "noopener noreferrer";
       if(description == 'My portfolio') {
         homepage = '#';
         console.log('Prawie...');
